@@ -1,6 +1,6 @@
-# Omutambo Herd Operations
+[# Omutambo Herd Operations
 
-![Omutambo Herd Operations](https://raw.githubusercontent.com/freeman-ipumbu/omutambo-herd-case-study/main/assets/omutambo-mark.svg)
+![Omutambo Herd Operations](https://raw.githubusercontent.com/freeman-ipumbu/omutambo-herd-case-study/main/omutambo-mark.svg)
 
 **A Namibia-first livestock operations workspace for cattle owners, farm managers and field teams.**
 
@@ -102,3 +102,4 @@ Please report security concerns privately to [freeman.ipumbu@outlook.com](mailto
 ---
 
 © 2026 Freeman Ipumbu. Shared for portfolio evaluation and product discussion. No licence is granted to reproduce the product, branding or documentation.
+](https://github.com/freeman-ipumbu)
