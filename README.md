@@ -1,4 +1,4 @@
-[# Omutambo Herd Operations
+# Omutambo Herd Operations
 
 ![Omutambo Herd Operations](https://raw.githubusercontent.com/freeman-ipumbu/omutambo-herd-case-study/main/omutambo-mark.svg)
 
@@ -22,7 +22,7 @@ Omutambo explores a more dependable operating picture: every animal has an ident
 
 ## Product response
 
-- A cattle register with tag, name, breed, class, age, camp and status.
+- Cattle register with tag, name, breed, class, age, camp and status.
 - Optional animal photographs attached from a phone or computer and retained with the local record.
 - Click-through animal profiles that bring identity, current camp, status and review context together.
 - Health and treatment ledger for vaccinations, follow-ups, drenches and vet notes.
@@ -31,14 +31,14 @@ Omutambo explores a more dependable operating picture: every animal has an ident
 - Movement register for traceability between camps and handling events.
 - Task queue for assigning field actions and closing them after verification.
 - Cost ledger in NAD across veterinary care, feed, transport and handling.
-- Searchable records with empty, stale and offline language that is understandable in the field.
+- Searchable records with clear empty, stale and offline language.
 - JSON and CSV exports plus print mode for handovers, vet visits and paper files.
 - Local-first drafts that remain useful when connectivity drops.
-- A zero-dependency local API path for controlled demos and future service integration.
+- Zero-dependency local API path for controlled demos and future service integration.
 
 ## Design science approach
 
-The work follows the same evidence-led discipline I use across NamAir and NamMar while keeping the livestock domain and experience purpose-built:
+The work follows the same evidence-led discipline I use across NamAir and NamMar while keeping the livestock domain purpose-built:
 
 1. **Problem framing** — understand the operational cost of fragmented herd records.
 2. **Objectives** — create one trustworthy record without adding field complexity.
@@ -55,11 +55,11 @@ The work follows the same evidence-led discipline I use across NamAir and NamMar
 - **Recommendations need reasons.** Prompts are cues for owner or vet review, never automated diagnoses or approvals.
 - **Authority remains human.** The owner, manager and qualified veterinarian remain accountable for decisions.
 - **Fallbacks must be honest.** If weather, maps or sync are not configured, the interface says so instead of inventing live values.
-- **Production claims stay controlled.** A working demonstration is not described as a certified veterinary, financial or regulatory system.
+- **Production claims stay controlled.** A demonstration is not described as a certified veterinary, financial or regulatory system.
 
 ## Namibia-first details
 
-The interface uses Namibian geography in sample records, NAD currency, Southern African date and time language, metric herd units and simple field vocabulary. It is designed for intermittent connectivity and phone-sized screens without assuming that every farm has continuous broadband or a dedicated data clerk.
+The interface uses Namibian geography in sample records, NAD currency, Southern African date and time language, metric herd units and simple field vocabulary. It is designed for intermittent connectivity and phone-sized screens without assuming continuous broadband or a dedicated data clerk.
 
 The product starts with cattle operations in Namibia while leaving room for other herd types, regional practices, multiple properties and partner workflows after the correct domain and governance work is done.
 
@@ -102,4 +102,3 @@ Please report security concerns privately to [freeman.ipumbu@outlook.com](mailto
 ---
 
 © 2026 Freeman Ipumbu. Shared for portfolio evaluation and product discussion. No licence is granted to reproduce the product, branding or documentation.
-](https://github.com/freeman-ipumbu)
