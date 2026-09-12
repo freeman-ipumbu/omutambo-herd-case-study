@@ -1,15 +1,32 @@
-# Omutambo Herd Operations — public case study
+# Omutambo Herd Operations — case study
 
-Omutambo addresses a practical gap for Namibian cattle operations: records often live across notebooks, spreadsheets, WhatsApp messages and memory. The system creates one reviewable record for each animal and the work around it.
+Omutambo joins tagged cattle, photographs, health and breeding records, camps, movements, tasks and NAD costs into one farm workspace. The interface uses actual register totals and explicitly separates fictional demonstration records from the owner's live farm.
 
-The experience borrows the strongest discipline from NamAir and NamMar: visible state, explicit freshness, explainable prompts, human authority and honest fallbacks. The domain model is purpose-built for cattle operations: tags, breed/sex/age, ownership, health treatments and vaccinations, breeding and calving, grazing camps, water points, movements, mortalities, sales and purchases, feed and veterinary costs, tasks, exports and print-friendly reports.
+The deployed owner release persists versioned records in Cloudflare D1, checks signed identity at the API, preserves conflicting drafts, and supports complete JSON backups. The deployed access-management release adds named invitations, single-use activation codes, expiring permissions, owner revocation and access history. Each tester operates in a separate demonstration workspace.
 
-The private demo supports browser-local drafts, a zero-dependency local API, searchable cattle records, animal profiles, optional photo attachments, JSON/CSV export and print mode. Demo data is fictional and labelled clearly.
+<!-- RELEASE-STATUS:START -->
+## Release status
 
-## Safety and boundary
+**access-review-1 — Deployed for owner use; external tester activation awaits hosted identity verification.**
 
-Omutambo records decisions; it does not diagnose animals, prescribe treatment, approve a sale or replace a qualified vet, owner or manager. A production rollout requires authenticated farm tenancy, least-privilege roles, encrypted photo storage, audit history, conflict-safe sync, backups, monitoring and Namibia-specific data-protection review.
+Current deployed system: Owner console, invitation creation and revocation, persistent access history, photo upload/save/reload, photo-inclusive backup export, and separate empty live farm verified on Cloudflare.
 
-## Role
+Review scope: Invitation-only test programme; each tester has a separate demo workspace; only the owner can access live farm records.
 
-Product strategy, design research, systems engineering, interaction design, frontend/backend foundation, deployment shape and hardening plan by Freeman Ipumbu.
+Verification: **88 automated checks passed** in the released application build. These cover record handling, signed identity, invitation activation and replay, expiry, revocation, role boundaries, isolated workspaces, backups and browser-draft behaviour. Local browser review also exercised the owner invitation form. Hosted owner administration, invitation creation/revocation, photograph save/reload and backup export have also been verified. The remaining hosted identity gates are listed below.
+
+Operating limits: 10 MiB per workspace including photographs; latest 20 saved revisions; up to 200 access records.
+
+Remaining external tester launch gates:
+
+- Provide an owner-controlled tester email and complete the hosted email identity, activation, replay, isolation, viewer, expiry and existing-session revocation checks
+- Enable the production email identity gateway for invited testers after the hosted authorization checks; preview access stays owner-only
+<!-- RELEASE-STATUS:END -->
+
+## Design and responsibility
+
+Freeman Ipumbu: product strategy, research, interface design and systems engineering. The work carries forward NamAir and NamMar principles of visible state, explicit freshness and human authority while using a cattle-specific record model.
+
+Demonstration examples are fictional. This product records operational decisions; it does not diagnose animals, prescribe treatments, approve sales or replace a qualified veterinarian. The test programme is not a claim of full commercial farm tenancy, regulatory certification or unlimited image storage.
+
+The public repository contains narrative only. Private source, records, credentials and deployment configuration remain separate.

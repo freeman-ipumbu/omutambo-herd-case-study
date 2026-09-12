@@ -8,11 +8,30 @@ Omutambo turns scattered notebooks, spreadsheets, WhatsApp messages and memory i
 
 > This is a public product case study. The working application, private deployment configuration, credentials, customer records and operational data remain separate. All examples in this repository are fictional presentation material.
 
+<!-- RELEASE-STATUS:START -->
+## Release status
+
+**access-review-1 — Deployed for owner use; external tester activation awaits hosted identity verification.**
+
+Current deployed system: Owner console, invitation creation and revocation, persistent access history, photo upload/save/reload, photo-inclusive backup export, and separate empty live farm verified on Cloudflare.
+
+Review scope: Invitation-only test programme; each tester has a separate demo workspace; only the owner can access live farm records.
+
+Verification: **88 automated checks passed** in the released application build. These cover record handling, signed identity, invitation activation and replay, expiry, revocation, role boundaries, isolated workspaces, backups and browser-draft behaviour. Local browser review also exercised the owner invitation form. Hosted owner administration, invitation creation/revocation, photograph save/reload and backup export have also been verified. The remaining hosted identity gates are listed below.
+
+Operating limits: 10 MiB per workspace including photographs; latest 20 saved revisions; up to 200 access records.
+
+Remaining external tester launch gates:
+
+- Provide an owner-controlled tester email and complete the hosted email identity, activation, replay, isolation, viewer, expiry and existing-session revocation checks
+- Enable the production email identity gateway for invited testers after the hosted authorization checks; preview access stays owner-only
+<!-- RELEASE-STATUS:END -->
+
 ## My role
 
 **Freeman Ipumbu — Product owner, designer, systems engineer and researcher**
 
-I framed the operating problem, designed the information architecture, built the working product, shaped the Namibia-first visual language, added local-first persistence and photo handling, prepared the private Cloudflare test deployment and wrote the production hardening plan.
+I framed the operating problem, designed the information architecture, built the working product, shaped the Namibia-first visual language, added versioned cloud persistence and photo handling, prepared the private Cloudflare deployment and owner access-management review and wrote the production hardening plan.
 
 ## The problem
 
@@ -23,7 +42,7 @@ Omutambo explores a more dependable operating picture: every animal has an ident
 ## Product response
 
 - Cattle register with tag, name, breed, class, age, camp and status.
-- Optional animal photographs attached from a phone or computer and retained with the local record.
+- Resized animal photographs attached from a phone or computer and included in complete backups.
 - Click-through animal profiles that bring identity, current camp, status and review context together.
 - Health and treatment ledger for vaccinations, follow-ups, drenches and vet notes.
 - Breeding and calving register for service, pregnancy checks, expected dates and calving outcomes.
@@ -33,8 +52,9 @@ Omutambo explores a more dependable operating picture: every animal has an ident
 - Cost ledger in NAD across veterinary care, feed, transport and handling.
 - Searchable records with clear empty, stale and offline language.
 - JSON and CSV exports plus print mode for handovers, vet visits and paper files.
-- Local-first drafts that remain useful when connectivity drops.
-- Zero-dependency local API path for controlled demos and future service integration.
+- Owner device drafts with visible cloud acknowledgements and conflicting-write protection.
+- Separate demo and live workspaces backed by versioned cloud records.
+- Prepared owner console for named invitations, expiring tester/viewer permissions, revocation and access history.
 
 ## Design science approach
 
@@ -65,20 +85,17 @@ The product starts with cattle operations in Namibia while leaving room for othe
 
 ## Engineering overview
 
-- Responsive HTML, CSS and JavaScript working surface.
-- Browser-local persistence for draft records and photo attachments.
-- Zero-dependency Node HTTP API for controlled local demonstrations.
-- Static Cloudflare-compatible build with private-by-default access.
-- Accessible semantic navigation, keyboard-focusable records and readable status cues.
-- JSON and CSV export, print-friendly layouts and clear sample-data labels.
-- No client-side API keys, live weather claims or fabricated satellite/map values.
-- Private source and deployment configuration intentionally separated from this public case study.
+The deployed application combines a responsive browser interface with a Cloudflare Worker API and transactional D1 persistence. The server validates the signed identity and submitted records, rejects stale writes and preserves revision metadata. Complete backups include photographs; CSV exports serve spreadsheet handovers.
+
+The prepared access-management build separates identity verification from the owner's permission decisions. A valid email login alone does not grant a farm workspace. A tester must activate a matching, unexpired, single-use invitation, and every data request checks the current grant. Viewer permissions are enforced by the server. Tester data is scoped to the verified identity, and the live farm remains owner-only.
+
+Authenticated screens are not cached in the prepared build. Owner drafts are scoped to identity; tester drafts stay in the current page until the cloud confirms the save. Access expiry and revocation are checked at each server request. Access history records administrative actions, activations and throttled workspace visits.
 
 ## Production path
 
-The private test site is a controlled demonstration surface. A production rollout would add named accounts, farm tenancy isolation, MFA, owner/manager/field/vet roles, encrypted object storage for images, signed downloads, append-only audit history, conflict-safe offline sync, backup and restore drills, rate limits, secure headers, dependency scanning, monitoring, incident response and a Namibia-specific data-protection review.
+This is a controlled owner demonstration and test programme. Broader commercial onboarding still needs shared-farm roles, scalable private object storage, monitored budgets and request limits, scheduled independent backups, hosted recovery drills, identity-provider MFA enforcement, incident response and appropriate commercial and data-governance review.
 
-Those controls are documented in the private build's hardening plan. They are prerequisites for accepting real farm records, not claims that a prototype has already satisfied them.
+The public narrative distinguishes deployed evidence from prepared features. No security certification, commercial launch readiness or external integration is implied by a passing local test suite.
 
 ## Safety and data boundary
 
