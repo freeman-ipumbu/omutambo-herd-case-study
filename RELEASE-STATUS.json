@@ -1,14 +1,14 @@
 {
-  "release": "access-review-1",
-  "status": "Deployed for owner use; external tester activation awaits hosted identity verification",
-  "deployed": "Owner console, invitation creation and revocation, persistent access history, photo upload/save/reload, photo-inclusive backup export, and separate empty live farm verified on Cloudflare",
+  "release": "public-launch-1",
+  "status": "Public website live; owner-managed invitation access enabled and verified",
+  "deployed": "Public front page at https://omutambo.pages.dev with protected sign-in; hosted second-email identity verification, invitation activation, isolated demo save, viewer restriction, activation replay rejection and existing-session revocation verified; owner administration, photographs and backup export verified",
   "scope": "Invitation-only test programme; each tester has a separate demo workspace; only the owner can access live farm records",
   "limits": "10 MiB per workspace including photographs; latest 20 saved revisions; up to 200 access records",
-  "gates": [
-    "Provide an owner-controlled tester email and complete the hosted email identity, activation, replay, isolation, viewer, expiry and existing-session revocation checks",
-    "Enable the production email identity gateway for invited testers after the hosted authorization checks; preview access stays owner-only"
-  ],
+  "gates": [],
   "applicationCommit": "a50426efe2ddeb2e6486a68833dfed5353c0a025",
+  "publicUrl": "https://omutambo.pages.dev",
+  "signInUrl": "https://omutambo-herd-operations.pages.dev/login",
+  "adminUrl": "https://omutambo-herd-operations.pages.dev/admin",
   "verification": {
     "total": 88,
     "verifiedAt": "2026-09-12T13:15:49.187Z"
