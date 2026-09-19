@@ -1,16 +1,23 @@
 {
-  "release": "public-launch-1",
-  "status": "Public website live; owner-managed invitation access enabled and verified",
-  "deployed": "Public front page at https://omutambo.pages.dev with protected sign-in; hosted second-email identity verification, invitation activation, isolated demo save, viewer restriction, activation replay rejection and existing-session revocation verified; owner administration, photographs and backup export verified",
+  "release": "livestock-poultry-1",
+  "status": "Multi-species livestock and poultry operations deployed; authenticated owner smoke check pending",
+  "deployed": "Production now includes cattle, goats, sheep and freely named livestock species plus flock-level poultry inventory, eggs, feed, mortality, weight, health, movement, cleaning, water and biosecurity records; the public front page remains at https://omutambo.pages.dev with protected sign-in and the existing verified invitation boundary",
   "scope": "Invitation-only test programme; each tester has a separate demo workspace; only the owner can access live farm records",
   "limits": "10 MiB per workspace including photographs; latest 20 saved revisions; up to 200 access records",
-  "gates": [],
-  "applicationCommit": "a50426efe2ddeb2e6486a68833dfed5353c0a025",
+  "gates": [
+    "Run the post-deployment owner save, reload, export and restore smoke check through the email-authenticated production session; keep live farm records unchanged."
+  ],
+  "verificationTotal": 100,
+  "verificationDate": "2026-09-19T18:36:46Z",
+  "applicationCommit": null,
+  "sourceState": "Reviewed uncommitted workspace; no Git repository was present",
+  "deploymentId": "b04792e0-fe9d-4e71-b82c-71d9e07787cb",
+  "deploymentUrl": "https://b04792e0.omutambo-herd-operations.pages.dev",
   "publicUrl": "https://omutambo.pages.dev",
   "signInUrl": "https://omutambo-herd-operations.pages.dev/login",
   "adminUrl": "https://omutambo-herd-operations.pages.dev/admin",
   "verification": {
-    "total": 88,
-    "verifiedAt": "2026-09-12T13:15:49.187Z"
+    "total": 100,
+    "verifiedAt": "2026-09-19T18:36:46Z"
   }
 }

@@ -2,7 +2,7 @@
 
 ![Omutambo Herd Operations](https://raw.githubusercontent.com/freeman-ipumbu/omutambo-herd-case-study/main/omutambo-mark.svg)
 
-**A Namibia-first livestock operations workspace for cattle owners, farm managers and field teams.**
+**A Namibia-first livestock and poultry operations workspace for owners, farm managers and field teams.**
 
 Omutambo turns scattered notebooks, spreadsheets, WhatsApp messages and memory into one reviewable herd record. It connects animal identity, health, breeding, grazing, water, movements, tasks, costs and evidence without hiding uncertainty or replacing the owner, manager or qualified veterinarian.
 
@@ -11,17 +11,19 @@ Omutambo turns scattered notebooks, spreadsheets, WhatsApp messages and memory i
 <!-- RELEASE-STATUS:START -->
 ## Release status
 
-**public-launch-1 — Public website live; owner-managed invitation access enabled and verified.**
+**livestock-poultry-1 — Multi-species livestock and poultry operations deployed; authenticated owner smoke check pending.**
 
-Current deployed system: Public front page at https://omutambo.pages.dev with protected sign-in; hosted second-email identity verification, invitation activation, isolated demo save, viewer restriction, activation replay rejection and existing-session revocation verified; owner administration, photographs and backup export verified.
+Current deployed system: Production now includes cattle, goats, sheep and freely named livestock species plus flock-level poultry inventory, eggs, feed, mortality, weight, health, movement, cleaning, water and biosecurity records; the public front page remains at https://omutambo.pages.dev with protected sign-in and the existing verified invitation boundary.
 
 Review scope: Invitation-only test programme; each tester has a separate demo workspace; only the owner can access live farm records.
 
-Verification: **88 automated checks passed** in the released application build. These cover record handling, signed identity, invitation activation and replay, expiry, revocation, role boundaries, isolated workspaces, backups and browser-draft behaviour. Local browser review also exercised the owner invitation form. Hosted owner administration, invitation creation/revocation, photograph save/reload and backup export have also been verified. Hosted second-email activation, isolated demo saving, viewer restrictions, consumed-code rejection and existing-session revocation have also passed.
+Verification: **100 automated checks passed** in the released application build. These cover record handling, multi-species migration, poultry inventory and operating measures, signed identity, invitation activation and replay, expiry, revocation, role boundaries, isolated workspaces, backups and browser-draft behaviour. The production deployment and anonymous Access boundary were checked after upload. Earlier hosted drills verified owner administration, invitation creation/revocation, photograph save/reload, backup export, second-email activation, isolated demo saving, viewer restrictions, consumed-code rejection and existing-session revocation.
 
 Operating limits: 10 MiB per workspace including photographs; latest 20 saved revisions; up to 200 access records.
 
-Public website: https://omutambo.pages.dev. The owner controls invitation access through the hosted administration console.
+Remaining launch gates:
+
+- Run the post-deployment owner save, reload, export and restore smoke check through the email-authenticated production session; keep live farm records unchanged.
 <!-- RELEASE-STATUS:END -->
 
 ## My role
@@ -32,13 +34,16 @@ I framed the operating problem, designed the information architecture, built the
 
 ## The problem
 
-Cattle operations are continuous, distributed work. A tag is checked in the kraal, a treatment is recorded beside a crush pen, a breeding event is remembered during a call, a water point is inspected in the field and a cost lands in a receipt book. When those facts cannot be joined reliably, owners lose time and confidence exactly when a decision needs evidence.
+Farm operations are continuous, distributed work. A cattle tag is checked in the kraal, goats and sheep move between camps, poultry teams count birds and eggs, a treatment is recorded beside a handling point, a water point is inspected in the field and a cost lands in a receipt book. When those facts cannot be joined reliably, owners lose time and confidence exactly when a decision needs evidence.
 
 Omutambo explores a more dependable operating picture: every animal has an identity, every field event has a time and owner, every exception stays visible, and every prompt remains reviewable by the people with authority to act.
 
 ## Product response
 
-- Cattle register with tag, name, breed, class, age, camp and status.
+- Multi-species livestock register for cattle, goats, sheep and freely named animal types, with tag, name, species, breed, class, age, camp and status.
+- Poultry flock and batch control with bird type, breed, purpose, placement date, housing, current count, capacity and status.
+- Flock-linked poultry operations for eggs, feed, mortality, weight, health, movements, cleaning, water and biosecurity.
+- Recorded-data poultry indicators for lay rate, feed intensity, mortality and housing pressure, with missing data left visible rather than estimated.
 - Resized animal photographs attached from a phone or computer and included in complete backups.
 - Click-through animal profiles that bring identity, current camp, status and review context together.
 - Health and treatment ledger for vaccinations, follow-ups, drenches and vet notes.
@@ -51,7 +56,7 @@ Omutambo explores a more dependable operating picture: every animal has an ident
 - JSON and CSV exports plus print mode for handovers, vet visits and paper files.
 - Owner device drafts with visible cloud acknowledgements and conflicting-write protection.
 - Separate demo and live workspaces backed by versioned cloud records.
-- Prepared owner console for named invitations, expiring tester/viewer permissions, revocation and access history.
+- Deployed owner console for named invitations, expiring tester/viewer permissions, revocation and access history.
 
 ## Design science approach
 
@@ -78,7 +83,7 @@ The work follows the same evidence-led discipline I use across NamAir and NamMar
 
 The interface uses Namibian geography in sample records, NAD currency, Southern African date and time language, metric herd units and simple field vocabulary. It is designed for intermittent connectivity and phone-sized screens without assuming continuous broadband or a dedicated data clerk.
 
-The product starts with cattle operations in Namibia while leaving room for other herd types, regional practices, multiple properties and partner workflows after the correct domain and governance work is done.
+The deployed product now covers cattle, goats, sheep, other livestock and poultry operations in Namibia while leaving room for multiple properties and partner workflows after the correct domain and governance work is done. The authenticated owner post-deployment smoke check remains visible as a release gate rather than being implied complete.
 
 ## Engineering overview
 
