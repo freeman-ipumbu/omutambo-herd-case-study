@@ -43,6 +43,19 @@
   font-size: 12px;
 }
 
+.experience-credit a {
+  color: var(--ink);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: #aebaac;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.experience-credit a:hover {
+  text-decoration-color: currentColor;
+}
+
 @media (max-width: 800px) {
   .release-proof {
     grid-template-columns: 1fr;
