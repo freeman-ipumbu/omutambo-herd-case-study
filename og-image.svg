@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">Omutambo Herd Operations</title>
+  <desc id="description">A Namibia-first livestock and poultry operations workspace.</desc>
+  <defs>
+    <pattern id="grass" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M7 23l4-9 4 9M23 18l3-6 3 6" fill="none" stroke="#dceb8d" stroke-width="1.4" opacity=".18"/>
+    </pattern>
+    <linearGradient id="sand" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#f5f3e9"/>
+      <stop offset="1" stop-color="#e7e5d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#sand)"/>
+  <rect x="748" width="452" height="630" fill="#193c30"/>
+  <rect x="748" width="452" height="630" fill="url(#grass)"/>
+
+  <g transform="translate(78 64)">
+    <circle cx="34" cy="34" r="29" fill="#193c30"/>
+    <circle cx="34" cy="34" r="15" fill="none" stroke="#dceb8d" stroke-width="8"/>
+    <text x="82" y="29" fill="#193c30" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" letter-spacing="5">OMUTAMBO</text>
+    <text x="84" y="52" fill="#647267" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" letter-spacing="4">HERD OPERATIONS</text>
+  </g>
+
+  <g fill="#193c30" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="600" letter-spacing="-2">
+    <text x="78" y="224">Your herd.</text>
+    <text x="78" y="292">Your ground.</text>
+    <text x="78" y="360" fill="#68835d">Your control.</text>
+  </g>
+  <text x="80" y="417" fill="#647267" font-family="Arial, Helvetica, sans-serif" font-size="19">Livestock, poultry, land and field work in one clear picture.</text>
+
+  <g transform="translate(78 490)">
+    <rect width="176" height="43" rx="21.5" fill="#193c30"/>
+    <circle cx="24" cy="21.5" r="4" fill="#dceb8d"/>
+    <text x="39" y="27" fill="#f5f3e9" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="1.7">BUILT IN NAMIBIA</text>
+  </g>
+  <text x="78" y="580" fill="#647267" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="1.8">PRIVATE WORKSPACES · ACCESS BY INVITATION</text>
+
+  <g transform="translate(748)">
+    <circle cx="338" cy="112" r="52" fill="#d7a764"/>
+    <path d="M0 235L95 164l92 45 86-79 179 83v417H0Z" fill="#9fac88"/>
+    <path d="M0 325l132-76 111 54 101-66 108 46v347H0Z" fill="#66816b"/>
+    <path d="M0 421l452-83v292H0Z" fill="#335a47"/>
+    <path d="M0 421l452-83v292H0Z" fill="url(#grass)" opacity=".65"/>
+    <path d="M371 313c-75 74-91 170-70 317" fill="none" stroke="#d8c89f" stroke-width="27" opacity=".8"/>
+    <path d="M154 366l-35 264M265 374l24 256M0 511l452-60" fill="none" stroke="#dfe2c1" stroke-width="2" stroke-dasharray="8 7" opacity=".85"/>
+    <circle cx="205" cy="433" r="17" fill="#acd0cf" stroke="#eff1dd" stroke-width="6"/>
+
+    <g fill="#f5f3e9">
+      <path d="M88 414h38l10 9v22h-7v-12H98v12h-7v-25l-8-3z"/>
+      <path d="M174 501h31l8 8v19h-6v-10h-26v10h-6v-21l-7-3z"/>
+      <path d="M331 444h27l8 7v17h-5v-9h-23v9h-6v-18l-6-3z"/>
+    </g>
+
+    <g font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" letter-spacing="2.2">
+      <rect x="31" y="47" width="225" height="34" rx="17" fill="#dceb8d"/>
+      <text x="52" y="69" fill="#193c30">THE WORKING PICTURE</text>
+      <text x="31" y="557" fill="#f5f3e9">CATTLE · GOATS · SHEEP</text>
+      <text x="31" y="584" fill="#dceb8d">POULTRY · LAND · WORK</text>
+    </g>
+  </g>
+</svg>
