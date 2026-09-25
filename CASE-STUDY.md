@@ -28,6 +28,8 @@ Remaining launch gates:
 
 Freeman Ipumbu: product strategy, research, interface design and systems engineering. The work carries forward NamAir and NamMar principles of visible state, explicit freshness and human authority through a multi-species farm record model.
 
+The refreshed visual identity is built around a kraal opening into a field path, with one center point for the animal or record under care. The shared vector mark now connects the public front door, protected workspace, owner console, browser icon, installable-app manifest and social preview as one product system.
+
 Demonstration examples are fictional. This product records operational decisions; it does not diagnose animals, prescribe treatments, approve sales or replace a qualified veterinarian. The test programme is not a claim of full commercial farm tenancy, regulatory certification or unlimited image storage.
 
 The public repository contains the public website assets and case study. Private source, records, credentials and deployment configuration remain separate.

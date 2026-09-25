@@ -32,6 +32,10 @@ Remaining launch gates:
 
 I framed the operating problem, designed the information architecture, built the working product, shaped the Namibia-first visual language, added versioned cloud persistence and photo handling, deployed the private Cloudflare application and owner access management and wrote the production hardening plan.
 
+## Visual identity
+
+The Omutambo mark is a circular livestock enclosure opening into a field path, with a single center point representing the animal or record under care. The same vector mark now anchors the public site, protected workspace, owner console, browser icon, installable-app manifest and social preview. Its dark field green, working lime and warm ground palette is designed to remain recognizable from a 16-pixel tab icon to a large product presentation without relying on a generic livestock silhouette.
+
 ## The problem
 
 Farm operations are continuous, distributed work. A cattle tag is checked in the kraal, goats and sheep move between camps, poultry teams count birds and eggs, a treatment is recorded beside a handling point, a water point is inspected in the field and a cost lands in a receipt book. When those facts cannot be joined reliably, owners lose time and confidence exactly when a decision needs evidence.

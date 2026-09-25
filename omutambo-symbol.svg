@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Omutambo mark</title>
+  <desc id="desc">A circular livestock enclosure opening into a field path.</desc>
+  <rect x="2" y="2" width="60" height="60" rx="17" fill="#193c30"/>
+  <path d="M23.5 51A21 21 0 1 1 40.5 51" fill="none" stroke="#dceb8d" stroke-width="6.5" stroke-linecap="round"/>
+  <path d="M23.5 51 19 60M40.5 51 45 60" fill="none" stroke="#dceb8d" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="31" cy="32" r="4" fill="#f5f3e9"/>
+</svg>
