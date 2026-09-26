@@ -9,9 +9,9 @@ The production build covers cattle, goats, sheep and freely named livestock spec
 <!-- RELEASE-STATUS:START -->
 ## Release status
 
-**livestock-poultry-1 — Multi-species livestock and poultry operations deployed; authenticated owner smoke check pending.**
+**field-command-1 — Unified Field Command experience deployed to production; authenticated owner smoke check remains pending.**
 
-Current deployed system: Production now includes cattle, goats, sheep and freely named livestock species plus flock-level poultry inventory, eggs, feed, mortality, weight, health, movement, cleaning, water and biosecurity records; the public front page remains at https://omutambo.pages.dev with protected sign-in and the existing verified invitation boundary.
+Current deployed system: The production refresh unifies the public site, protected workspace, invitation flow and owner console around a complete-enclosure identity, shared visual tokens, consistent icons, clearer action hierarchy, responsive record cards and evidence coverage for poultry measures while preserving the existing multi-species and access-control model.
 
 Review scope: Invitation-only test programme; each tester has a separate demo workspace; only the owner can access live farm records.
 
@@ -27,8 +27,6 @@ Remaining launch gates:
 ## Design and responsibility
 
 Freeman Ipumbu: product strategy, research, interface design and systems engineering. The work carries forward NamAir and NamMar principles of visible state, explicit freshness and human authority through a multi-species farm record model.
-
-The refreshed visual identity is built around a kraal opening into a field path, with one center point for the animal or record under care. The shared vector mark now connects the public front door, protected workspace, owner console, browser icon, installable-app manifest and social preview as one product system.
 
 Demonstration examples are fictional. This product records operational decisions; it does not diagnose animals, prescribe treatments, approve sales or replace a qualified veterinarian. The test programme is not a claim of full commercial farm tenancy, regulatory certification or unlimited image storage.
 

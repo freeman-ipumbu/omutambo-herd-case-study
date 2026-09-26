@@ -11,9 +11,9 @@ Omutambo turns scattered notebooks, spreadsheets, WhatsApp messages and memory i
 <!-- RELEASE-STATUS:START -->
 ## Release status
 
-**livestock-poultry-1 — Multi-species livestock and poultry operations deployed; authenticated owner smoke check pending.**
+**field-command-1 — Unified Field Command experience deployed to production; authenticated owner smoke check remains pending.**
 
-Current deployed system: Production now includes cattle, goats, sheep and freely named livestock species plus flock-level poultry inventory, eggs, feed, mortality, weight, health, movement, cleaning, water and biosecurity records; the public front page remains at https://omutambo.pages.dev with protected sign-in and the existing verified invitation boundary.
+Current deployed system: The production refresh unifies the public site, protected workspace, invitation flow and owner console around a complete-enclosure identity, shared visual tokens, consistent icons, clearer action hierarchy, responsive record cards and evidence coverage for poultry measures while preserving the existing multi-species and access-control model.
 
 Review scope: Invitation-only test programme; each tester has a separate demo workspace; only the owner can access live farm records.
 
@@ -32,9 +32,11 @@ Remaining launch gates:
 
 I framed the operating problem, designed the information architecture, built the working product, shaped the Namibia-first visual language, added versioned cloud persistence and photo handling, deployed the private Cloudflare application and owner access management and wrote the production hardening plan.
 
-## Visual identity
+## Field Command design system
 
-The Omutambo mark is a circular livestock enclosure opening into a field path, with a single center point representing the animal or record under care. The same vector mark now anchors the public site, protected workspace, owner console, browser icon, installable-app manifest and social preview. Its dark field green, working lime and warm ground palette is designed to remain recognizable from a 16-pixel tab icon to a large product presentation without relying on a generic livestock silhouette.
+The refreshed identity keeps Omutambo recognisable rather than replacing it. The complete lime enclosure represents the farm boundary, the warm field path connects work to evidence and the central diamond represents the protected animal or record under care. The same mark, typography, colour tokens and icon language now connect the public front door, protected workspace, invitation flow, owner console, installable application and social preview.
+
+The interface refresh also sharpens operating priority: **Today on the farm** brings open field, health and poultry actions into one queue; the main header keeps one primary record action; mobile users get four frequent destinations plus a More sheet; and poultry performance now shows how many of the last seven days were actually logged. Missing days remain missing rather than being inferred.
 
 ## The problem
 
@@ -48,6 +50,8 @@ Omutambo explores a more dependable operating picture: every animal has an ident
 - Poultry flock and batch control with bird type, breed, purpose, placement date, housing, current count, capacity and status.
 - Flock-linked poultry operations for eggs, feed, mortality, weight, health, movements, cleaning, water and biosecurity.
 - Recorded-data poultry indicators for lay rate, feed intensity, mortality and housing pressure, with missing data left visible rather than estimated.
+- Visible seven-day data-coverage cues for egg and feed measures, anchored to the latest fictional log in the demo and the actual Namibian date in live workspaces.
+- Responsive record cards, a compact mobile operations dock and a consistent SVG icon system without changing the underlying registers.
 - Resized animal photographs attached from a phone or computer and included in complete backups.
 - Click-through animal profiles that bring identity, current camp, status and review context together.
 - Health and treatment ledger for vaccinations, follow-ups, drenches and vet notes.
