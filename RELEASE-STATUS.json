@@ -1,24 +1,24 @@
 {
-  "release": "field-command-1",
-  "status": "Unified Field Command experience deployed to production; authenticated owner smoke check remains pending",
-  "deployed": "The production refresh unifies the public site, protected workspace, invitation flow and owner console around a complete-enclosure identity, shared visual tokens, consistent icons, clearer action hierarchy, responsive record cards and evidence coverage for poultry measures while preserving the existing multi-species and access-control model",
+  "release": "field-command-2",
+  "status": "Branded access and workspace asset routing repaired in production; authenticated owner smoke check remains pending",
+  "deployed": "The production repair makes the shared brand tokens, logos and install assets available through the protected Worker, cache-busts the access and workspace shells, and adds a deliberate startup state so login, owner administration and farm records render as one coherent Field Command product without exposing private records",
   "scope": "Invitation-only test programme; each tester has a separate demo workspace; only the owner can access live farm records",
   "limits": "10 MiB per workspace including photographs; latest 20 saved revisions; up to 200 access records",
   "gates": [
     "Run the post-deployment owner save, reload, export and restore smoke check through the email-authenticated production session; keep live farm records unchanged."
   ],
   "verificationTotal": 100,
-  "verificationDate": "2026-09-26T18:46:07.377Z",
+  "verificationDate": "2026-09-26T19:01:35.898Z",
   "applicationCommit": null,
   "sourceState": "Reviewed uncommitted workspace; no Git repository was present",
-  "deploymentId": "3e3cc45b",
-  "deploymentUrl": "https://3e3cc45b.omutambo-herd-operations.pages.dev",
+  "deploymentId": "619b4dac",
+  "deploymentUrl": "https://619b4dac.omutambo-herd-operations.pages.dev",
   "brandSystem": "Field Command identity with a complete enclosure, protected record point and field path applied across public, protected, access, installable-app and social surfaces",
   "publicUrl": "https://omutambo.pages.dev",
   "signInUrl": "https://omutambo-herd-operations.pages.dev/login",
   "adminUrl": "https://omutambo-herd-operations.pages.dev/admin",
   "verification": {
     "total": 100,
-    "verifiedAt": "2026-09-26T18:46:07.377Z"
+    "verifiedAt": "2026-09-26T19:01:35.898Z"
   }
 }

@@ -11,9 +11,9 @@ Omutambo turns scattered notebooks, spreadsheets, WhatsApp messages and memory i
 <!-- RELEASE-STATUS:START -->
 ## Release status
 
-**field-command-1 — Unified Field Command experience deployed to production; authenticated owner smoke check remains pending.**
+**field-command-2 — Branded access and workspace asset routing repaired in production; authenticated owner smoke check remains pending.**
 
-Current deployed system: The production refresh unifies the public site, protected workspace, invitation flow and owner console around a complete-enclosure identity, shared visual tokens, consistent icons, clearer action hierarchy, responsive record cards and evidence coverage for poultry measures while preserving the existing multi-species and access-control model.
+Current deployed system: The production repair makes the shared brand tokens, logos and install assets available through the protected Worker, cache-busts the access and workspace shells, and adds a deliberate startup state so login, owner administration and farm records render as one coherent Field Command product without exposing private records.
 
 Review scope: Invitation-only test programme; each tester has a separate demo workspace; only the owner can access live farm records.
 
