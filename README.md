@@ -1,6 +1,12 @@
 # Omutambo Herd Operations
 
-![Omutambo Herd Operations](https://raw.githubusercontent.com/freeman-ipumbu/omutambo-herd-case-study/main/omutambo-mark.svg)
+<p align="center">
+  <img src="og-image.png" width="100%" alt="Omutambo Herd Operations — Namibia-first field command for livestock and poultry operations">
+</p>
+
+<p align="center">
+  <img src="omutambo-mark.svg" width="132" alt="Omutambo Herd Operations identity mark">
+</p>
 
 **A Namibia-first livestock and poultry operations workspace for owners, farm managers and field teams.**
 
@@ -129,3 +135,5 @@ Please report security concerns privately to [freeman.ipumbu@outlook.com](mailto
 ---
 
 © 2026 Freeman Ipumbu. Shared for portfolio evaluation and product discussion. No licence is granted to reproduce the product, branding or documentation.
+
+An owned product-research record by Freeman Ipumbu, documented within the [SolarSpin Technologies public work atlas](https://www.solarspin-namibia.xyz/).
